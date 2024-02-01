@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -57,14 +58,23 @@ public class Unit : MonoBehaviour
     [SerializeField] private GameObject selectionVisual;
     public GameObject SelectionVisual { get { return selectionVisual; } }
     // Start is called before the first frame update
+
+    private void Awake()
+    {
+        navAgent = GetComponent<NavMeshAgent>();
+    }
     void Start()
     {
         
     }
-
     // Update is called once per frame
     void Update()
     {
-        navAgent = GetComponent<NavMeshAgent>();
+        
+    }
+    public void ToggleSelectionVisual(bool flag)
+    {
+        if (selectionVisual != null)
+            selectionVisual.SetActive(flag);
     }
 }
