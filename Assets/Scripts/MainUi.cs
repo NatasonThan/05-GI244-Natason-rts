@@ -5,6 +5,12 @@ using UnityEngine;
 
 public class MainUi : MonoBehaviour
 {
+    [SerializeField] 
+    private GameObject selectionMarker;
+    public GameObject SelectionMarker
+    {
+        get { return selectionMarker; }
+    }
     public static MainUi instance;
     // Start is called before the first frame update
     private void Awake()
