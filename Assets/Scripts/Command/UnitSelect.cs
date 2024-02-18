@@ -42,9 +42,8 @@ public class UnitSelect : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             if (EventSystem.current.IsPointerOverGameObject())
-            {
                 return;
-            }
+            
             ClearEverything();
         }
 
@@ -93,7 +92,7 @@ public class UnitSelect : MonoBehaviour
         if (curUnit != null)
             curUnit.ToggleSelectionVisual(false);
         if (curBuilding != null)
-            curUnit.ToggleSelectionVisual(false);
+            curBuilding.ToggleSelectionVisual(false);
     }
     private void ClearEverything()
     {

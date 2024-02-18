@@ -3943,7 +3943,7 @@ Transform:
   - {fileID: 488368}
   - {fileID: 429744}
   - {fileID: 440004}
-  - {fileID: 6560169447765860745}
+  - {fileID: 2378942112163123551}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &9580976
@@ -3977,7 +3977,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 10
+  m_Speed: 6
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -4025,19 +4025,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 1
-  unitName: 
-  unitPic: {fileID: 0}
-  curHP: 0
-  maxHP: 100
-  moveSpeed: 5
-  minWpnDamage: 0
-  maxWpnDamage: 0
-  armour: 0
-  visualRange: 0
-  weaponRange: 0
+  unitName: Daughter
+  unitPic: {fileID: 21300000, guid: fc2566997e2085d4c80969161c8aec58, type: 3}
+  curHP: 200
+  maxHP: 200
+  moveSpeed: 6
+  minWpnDamage: 5
+  maxWpnDamage: 10
+  armour: 5
+  visualRange: 30
+  weaponRange: 5
   state: 0
   faction: {fileID: 0}
-  selectionVisual: {fileID: 7208848068365545615, guid: 14668ceb969d5614b869dc0c4b67db61, type: 3}
+  selectionVisual: {fileID: 6590670613183614557}
   unitCost:
     food: 50
     wood: 15
@@ -6254,7 +6254,7 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.000019073486, y: 86.21986, z: -6.0901365}
     m_Extent: {x: 102.45596, y: 96.03123, z: 25.58535}
   m_DirtyAABB: 0
---- !u!1001 &5005163275518545412
+--- !u!1001 &4574598525808688850
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -6262,6 +6262,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 496956}
     m_Modifications:
+    - target: {fileID: 1729691880487589907, guid: 14668ceb969d5614b869dc0c4b67db61, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2197631411411316621, guid: 14668ceb969d5614b869dc0c4b67db61, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -6315,8 +6319,13 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14668ceb969d5614b869dc0c4b67db61, type: 3}
---- !u!4 &6560169447765860745 stripped
+--- !u!4 &2378942112163123551 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2197631411411316621, guid: 14668ceb969d5614b869dc0c4b67db61, type: 3}
-  m_PrefabInstance: {fileID: 5005163275518545412}
+  m_PrefabInstance: {fileID: 4574598525808688850}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6590670613183614557 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7208848068365545615, guid: 14668ceb969d5614b869dc0c4b67db61, type: 3}
+  m_PrefabInstance: {fileID: 4574598525808688850}
   m_PrefabAsset: {fileID: 0}
