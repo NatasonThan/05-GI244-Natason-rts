@@ -16,38 +16,29 @@ public abstract class Structure : MonoBehaviour
     [SerializeField]
     protected string structureName;
     public string StructureName { get { return structureName; } }
-
+    
     [SerializeField] protected Sprite structurePic;
     public Sprite StructurePic { get { return structurePic; } }
-
+    
     [SerializeField]
     protected int curHP;
     public int CurHP { get { return curHP; } set { curHP = value; } }
-
+    
     [SerializeField]
     protected int maxHP;
     public int MaxHP { get { return maxHP; } set {  maxHP = value; } }
-
+    
     [SerializeField]
     protected Faction faction;
-    public Faction Faction
-    {
-        get { return faction; }
-        set { faction = value; }
-    }
-
+    public Faction Faction { get { return faction; } set { faction = value; } }
+    
     [SerializeField]
     protected GameObject selectionVisual;
     public GameObject SelectionVisual { get { return selectionVisual; } }
-
+    
     [SerializeField] 
     private StructureCost structureCost;
-
-    public StructureCost StructureCost
-    {
-        get { return structureCost; }
-        set { structureCost = value; }
-    }
+    public StructureCost StructureCost { get { return structureCost; } set { structureCost = value; } }
 
     // Start is called before the first frame update
     void Start()

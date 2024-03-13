@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Building : Structure
@@ -23,29 +24,20 @@ public class Building : Structure
     [SerializeField] private float curUnitWaitTime = 0f;
 
     [SerializeField] private bool isFunctional;
-    public bool IsFunctional
-    {
-        get { return isFunctional; }
-        set { isFunctional = value; }
-    }
+    public bool IsFunctional { get { return isFunctional; } set { isFunctional = value; } }
 
     [SerializeField] private bool isHQ;
     public bool IsHQ { get { return isHQ; } }
 
     [SerializeField] private float intoTheGround = 5f;
     public float IntoTheGround { get { return IntoTheGround; } }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.G))
             ToCreateUnit(0);
         if (Input.GetKeyDown(KeyCode.H))
             ToCreateUnit(1);
+
 
         if ((recruitList.Count > 0) && (recruitList[0] != null))
         {
@@ -107,6 +99,7 @@ public class Building : Structure
         recruitList.RemoveAt(0);
 
         Unit unit = unitObj.GetComponent<Unit>();
+        unit.Faction = faction;
         unit.MoveToPosition(rallyPoint.position); //Go to Rally Point
 
         //Add unit into faction's Army
@@ -116,6 +109,7 @@ public class Building : Structure
         //If it's me, update UI
         if (faction == GameManager.instance.MyFaction)
             MainUi.instance.UpdateAllResource(faction);
+        
     }
     public void ToggleSelectionVisual(bool flag)
     {

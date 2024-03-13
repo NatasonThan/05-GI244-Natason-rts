@@ -53,7 +53,9 @@ MonoBehaviour:
   gold: 0
   stone: 0
   aliveUnits: []
-  aliveBuildings: []
+  aliveBuildings:
+  - {fileID: 2542999229713046017, guid: 8295570b64ce396458ca914733252346, type: 3}
+  - {fileID: 2542999229713046017, guid: adccb96430f23474e809fdba037a9fcd, type: 3}
   unitsParent: {fileID: 3366127959755623304}
   buildingsParent: {fileID: 4707505624804449530}
   ghostBuildingParent: {fileID: 1023458899700644772}
