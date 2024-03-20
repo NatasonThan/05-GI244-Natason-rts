@@ -46,8 +46,6 @@ public class Faction : MonoBehaviour
     [SerializeField]
     private int newResourceRange = 50; //range for worker to find new resource
     
-    
-    
     // Start is called before the first frame update
     void Start()
     {
@@ -139,6 +137,7 @@ public class Faction : MonoBehaviour
                 stone += amount;
                 break;
         }
+
         if (this == GameManager.instance.MyFaction)
             MainUi.instance.UpdateAllResource(this);
     }

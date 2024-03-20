@@ -127,7 +127,7 @@ public class Worker : MonoBehaviour
             unit.Faction.GainResource(carryType, amountCarry);
             amountCarry = 0;
 
-            //Debug.Log("Delivered");
+            Debug.Log("Delivered");
         }
         CheckForResource();
     }
@@ -142,13 +142,12 @@ public class Worker : MonoBehaviour
 
             //CheckAgain, if found a new one, go to it
             if (curResourceSource != null)
-                ToGatherResource(curResourceSource, curResourceSource.transform.position);
+                ToGatherResource(curResourceSource, curResourceSource.transform.position); 
             else //can't find a new one
             {
                 Debug.Log($"{unit.name} can't find a new tree");
                 unit.SetState(UnitState.Idle);
             }
         }
-    }
-    
+    }   
 }
