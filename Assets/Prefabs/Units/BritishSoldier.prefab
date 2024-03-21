@@ -2336,7 +2336,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f81a978cf85038f41a62cf0aad8c2981, type: 2}
+  - {fileID: 2100000, guid: ce19f20337e1d6545bddd9bc3ba7de65, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5142,7 +5142,7 @@ GameObject:
   - component: {fileID: 2121215248786798260}
   - component: {fileID: 4017360819271192927}
   m_Layer: 6
-  m_Name: Soldier
+  m_Name: BritishSoldier
   m_TagString: Unit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5259,7 +5259,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 0
-  unitName: Regular
+  unitName: Brit. Regular
   unitPic: {fileID: 21300000, guid: cddd0f264e000a34eb45934ba3e9b2ce, type: 3}
   curHP: 100
   maxHP: 100
@@ -5278,6 +5278,12 @@ MonoBehaviour:
     gold: 20
     stone: 0
   unitWaitTime: 0.1
+  isBuilder: 0
+  builder: {fileID: 0}
+  isWorker: 0
+  worker: {fileID: 0}
+  pathUpdateRate: 1
+  lastPathUpdateTime: 0
 --- !u!114 &4017360819271192927
 MonoBehaviour:
   m_ObjectHideFlags: 0
