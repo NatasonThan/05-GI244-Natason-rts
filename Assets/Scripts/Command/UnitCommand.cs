@@ -18,6 +18,11 @@ public class UnitCommand : MonoBehaviour
     void Start()
     {
         cam = Camera.main;
+        if (cam == null)
+        {
+            Debug.LogError("No camera found in the scene.");
+            return;
+        }
 
         layerMask = LayerMask.GetMask("Unit", "Building", "Resource", "Ground");
     }

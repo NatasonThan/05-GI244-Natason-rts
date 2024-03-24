@@ -27,6 +27,7 @@ public class UnitAnimation : MonoBehaviour
         anim.SetBool("isAttack",false);
         anim.SetBool("isChopping", false);
         anim.SetBool("isBuilding", false);
+        anim.SetBool("isDie",false);
 
         switch (u.State)
         {
@@ -44,6 +45,9 @@ public class UnitAnimation : MonoBehaviour
                 break;
             case UnitState.BuildProgress:
                 anim.SetBool("isBuilding", true);
+                break;
+            case UnitState.Die:
+                anim.SetBool("isDie",true);
                 break;
         }
     }
