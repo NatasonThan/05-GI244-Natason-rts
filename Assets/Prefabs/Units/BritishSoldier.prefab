@@ -5265,8 +5265,8 @@ MonoBehaviour:
   curHP: 100
   maxHP: 100
   moveSpeed: 5
-  minWpnDamage: 100
-  maxWpnDamage: 100
+  minWpnDamage: 1
+  maxWpnDamage: 1
   armour: 1
   visualRange: 20
   weaponRange: 15
@@ -5286,6 +5286,7 @@ MonoBehaviour:
   pathUpdateRate: 1
   lastPathUpdateTime: 0
   curEnemyUnitTarget: {fileID: 0}
+  curEnemyBuildingTarget: {fileID: 0}
   attackRate: 1
   lastAttackTime: 0
   defendRange: 30

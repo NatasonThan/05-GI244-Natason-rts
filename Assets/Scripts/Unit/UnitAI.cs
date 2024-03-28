@@ -8,7 +8,6 @@ public class UnitAI : MonoBehaviour
 
     protected LayerMask unitLayerMask;
     protected LayerMask buildingLayerMask;
-
     protected Unit unit;
     
     // Start is called before the first frame update
@@ -74,10 +73,9 @@ public class UnitAI : MonoBehaviour
     }
     protected void Check()
     {
-        if (unit.CurHP <= 0)
-        {
+        if (unit.CurHP <= 0 || unit.State == UnitState.Die)
             return;
-        }
+        
         if (!unit.IsWorker && !unit.IsBuilder)// if a unit is a fighter
         {
             // check if we have nearby enemies - if so, attack them
