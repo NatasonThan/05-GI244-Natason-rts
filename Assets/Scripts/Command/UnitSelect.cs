@@ -9,7 +9,7 @@ public class UnitSelect : MonoBehaviour
     private LayerMask layerMask;
 
     [SerializeField]
-    private List<Unit> curUnits; //current selected single unit
+    private List<Unit> curUnits = new List<Unit>(); //current selected single unit
     public List<Unit> CurUnits { get { return curUnits; } }
     
     [SerializeField]
@@ -164,6 +164,10 @@ public class UnitSelect : MonoBehaviour
             //Debug.Log("my building");
             ShowBuilding(curBuilding);//Show building info
         }
+        else
+        {
+            ShowEnemyBuilding(curBuilding);
+        }
     }
     private void ShowResource()
     {
@@ -220,9 +224,12 @@ public class UnitSelect : MonoBehaviour
         }
         selectionBox.sizeDelta = new Vector2(0, 0); //clear Selection Box's size;
     }
-
     private void ShowEnemyUnit(Unit u)
     {
         InfoManager.instance.ShowEnemyAllInfo(u);
+    }
+    private void ShowEnemyBuilding(Building b)
+    {
+        InfoManager.instance.ShowEnemyAllInfo(b);
     }
 }
