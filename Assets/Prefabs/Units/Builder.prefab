@@ -4027,7 +4027,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29a7c797f58fe134e86b360c925e76d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 1
+  id: 0
   unitName: Builder
   unitPic: {fileID: 21300000, guid: f5b4122677d799e47b930f96a932efb8, type: 3}
   curHP: 0

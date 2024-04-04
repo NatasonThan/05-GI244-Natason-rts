@@ -76,7 +76,7 @@ GameObject:
   - component: {fileID: 4917673033254644317}
   - component: {fileID: 113080647215472009}
   m_Layer: 8
-  m_Name: House
+  m_Name: Br_House
   m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -132,7 +132,9 @@ MonoBehaviour:
   curUnitProgress: 0
   curUnitWaitTime: 0
   isFunctional: 1
-  isHQ: 1
+  isHQ: 0
+  isHousing: 1
+  isBarrack: 0
   intoTheGround: 5
 --- !u!65 &7033087484595475642
 BoxCollider:

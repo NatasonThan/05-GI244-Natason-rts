@@ -54,13 +54,20 @@ MonoBehaviour:
   gold: 0
   stone: 0
   aliveUnits: []
-  aliveBuildings:
-  - {fileID: 2542999229713046017, guid: 8295570b64ce396458ca914733252346, type: 3}
-  - {fileID: 2542999229713046017, guid: adccb96430f23474e809fdba037a9fcd, type: 3}
+  aliveBuildings: []
   unitsParent: {fileID: 3366127959755623304}
   buildingsParent: {fileID: 4707505624804449530}
   ghostBuildingParent: {fileID: 1023458899700644772}
   startPosition: {fileID: 7078618251511667518}
+  newResourceRange: 50
+  buildingPrefabs:
+  - {fileID: 8368529940742716558, guid: d97fcf47c4f92a048b581214bdd105c4, type: 3}
+  - {fileID: 5553881516756804332, guid: d2475bbdf8f0345418ce956bab8526f5, type: 3}
+  - {fileID: 8368529940742716558, guid: 8295570b64ce396458ca914733252346, type: 3}
+  - {fileID: 8368529940742716558, guid: adccb96430f23474e809fdba037a9fcd, type: 3}
+  unitPrefabs:
+  - {fileID: 154498, guid: 3a1acf9820d849b44aa41c16709d8dca, type: 3}
+  - {fileID: 186328, guid: f32a41e2e70507f4c95b83e04a1a8bbd, type: 3}
 --- !u!1 &2805995227142378748
 GameObject:
   m_ObjectHideFlags: 0
