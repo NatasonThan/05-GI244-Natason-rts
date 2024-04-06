@@ -72,8 +72,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4695466775937667060}
   - component: {fileID: 645428611429675749}
-  - component: {fileID: 339798950982540373}
-  - component: {fileID: 6352244281906201087}
   m_Layer: 0
   m_Name: France
   m_TagString: Untagged
@@ -113,63 +111,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nation: 3
-  food: 1000
-  wood: 600
-  gold: 500
-  stone: 200
+  food: 0
+  wood: 0
+  gold: 0
+  stone: 0
   aliveUnits:
   - {fileID: 8054244103928403597}
   - {fileID: 4021281240809449357}
   - {fileID: 1073394517720462504}
-  aliveBuildings: []
+  aliveBuildings:
+  - {fileID: 2542999229713046017, guid: 5d703c85aa871c748bba3450b5e885ec, type: 3}
   unitsParent: {fileID: 571180994080398957}
   buildingsParent: {fileID: 4253462680809857088}
   ghostBuildingParent: {fileID: 3140584707864589172}
   startPosition: {fileID: 2314738999087992063}
   newResourceRange: 50
   buildingPrefabs:
-  - {fileID: 8368529940742716558, guid: d97fcf47c4f92a048b581214bdd105c4, type: 3}
-  - {fileID: 5553881516756804332, guid: d2475bbdf8f0345418ce956bab8526f5, type: 3}
-  - {fileID: 8368529940742716558, guid: 8295570b64ce396458ca914733252346, type: 3}
-  - {fileID: 8368529940742716558, guid: adccb96430f23474e809fdba037a9fcd, type: 3}
+  - {fileID: 8368529940742716558, guid: 5d703c85aa871c748bba3450b5e885ec, type: 3}
+  - {fileID: 8368529940742716558, guid: 6f2eec4fb71c849478323d64f112e518, type: 3}
+  - {fileID: 5553881516756804332, guid: fdc57b0b9ab1bec4dab8dd1db5acb8bb, type: 3}
+  - {fileID: 8368529940742716558, guid: 6995676c759c9bc4d8fe50095a5dea42, type: 3}
+  ghostBuildingPrefabs:
+  - {fileID: 8368529940742716558, guid: 0fc3bd24c415e6b40b4eb5c74b29e0ff, type: 3}
+  - {fileID: 8368529940742716558, guid: 87ec916f31a4a9f49af962ccf7573f2c, type: 3}
+  - {fileID: 5553881516756804332, guid: 6e264a24ca83e394b99d4afc498e5479, type: 3}
+  - {fileID: 8368529940742716558, guid: f39635a4f2fed1f4480a1bde4351d1dd, type: 3}
   unitPrefabs:
-  - {fileID: 154498, guid: 3a1acf9820d849b44aa41c16709d8dca, type: 3}
-  - {fileID: 186328, guid: f32a41e2e70507f4c95b83e04a1a8bbd, type: 3}
---- !u!114 &339798950982540373
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2662712205515260028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2adb4b80143fc24d9ac51ebdeb0168b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  layerMask:
-    serializedVersion: 2
-    m_Bits: 0
-  curUnits: []
-  curBuilding: {fileID: 0}
-  curResource: {fileID: 0}
-  selectionBox: {fileID: 0}
-  curEnemy: {fileID: 0}
---- !u!114 &6352244281906201087
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2662712205515260028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac19af8e70f544c4bb23f4426c494c0e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  layerMask:
-    serializedVersion: 2
-    m_Bits: 0
+  - {fileID: 154498, guid: 4d01d3116cc3eab48a55fcfa44e18526, type: 3}
+  - {fileID: 7336417001105189279, guid: a9eb6ee0b7ed03248898d2261f306a2f, type: 3}
 --- !u!1 &7457833551913053100
 GameObject:
   m_ObjectHideFlags: 0

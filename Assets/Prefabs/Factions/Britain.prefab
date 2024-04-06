@@ -48,23 +48,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85cb2303ac745994db76f92f4fc96dd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nation: 0
+  nation: 1
   food: 0
   wood: 0
   gold: 0
   stone: 0
   aliveUnits: []
-  aliveBuildings: []
+  aliveBuildings:
+  - {fileID: 2542999229713046017, guid: 8295570b64ce396458ca914733252346, type: 3}
+  - {fileID: 2542999229713046017, guid: adccb96430f23474e809fdba037a9fcd, type: 3}
   unitsParent: {fileID: 3366127959755623304}
   buildingsParent: {fileID: 4707505624804449530}
   ghostBuildingParent: {fileID: 1023458899700644772}
   startPosition: {fileID: 7078618251511667518}
   newResourceRange: 50
   buildingPrefabs:
-  - {fileID: 8368529940742716558, guid: d97fcf47c4f92a048b581214bdd105c4, type: 3}
-  - {fileID: 5553881516756804332, guid: d2475bbdf8f0345418ce956bab8526f5, type: 3}
   - {fileID: 8368529940742716558, guid: 8295570b64ce396458ca914733252346, type: 3}
   - {fileID: 8368529940742716558, guid: adccb96430f23474e809fdba037a9fcd, type: 3}
+  - {fileID: 5553881516756804332, guid: d2475bbdf8f0345418ce956bab8526f5, type: 3}
+  - {fileID: 8368529940742716558, guid: d97fcf47c4f92a048b581214bdd105c4, type: 3}
+  ghostBuildingPrefabs:
+  - {fileID: 8368529940742716558, guid: 3e5b27459d4e55f4d8bfb278a6709de5, type: 3}
+  - {fileID: 8368529940742716558, guid: 83f297dfbee3fe04594968e136dfea6c, type: 3}
+  - {fileID: 5553881516756804332, guid: 02be1937e59f2034fb90cfe2a71cd1b2, type: 3}
+  - {fileID: 8368529940742716558, guid: f366bc5eb06011149956ebf3c34b73e3, type: 3}
   unitPrefabs:
   - {fileID: 154498, guid: 3a1acf9820d849b44aa41c16709d8dca, type: 3}
   - {fileID: 186328, guid: f32a41e2e70507f4c95b83e04a1a8bbd, type: 3}

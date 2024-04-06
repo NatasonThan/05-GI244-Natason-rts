@@ -3911,7 +3911,7 @@ GameObject:
   - component: {fileID: 3563835285443168219}
   - component: {fileID: 9146085569506120563}
   m_Layer: 6
-  m_Name: Builder
+  m_Name: Fr-Builder
   m_TagString: Unit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4028,7 +4028,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 0
-  unitName: Builder
+  unitName: Fr-Builder
   unitPic: {fileID: 21300000, guid: f5b4122677d799e47b930f96a932efb8, type: 3}
   curHP: 100
   maxHP: 100
@@ -4085,15 +4085,15 @@ MonoBehaviour:
   toBuild: 0
   showGhost: 0
   buildingList:
-  - {fileID: 8368529940742716558, guid: 8295570b64ce396458ca914733252346, type: 3}
-  - {fileID: 8368529940742716558, guid: adccb96430f23474e809fdba037a9fcd, type: 3}
-  - {fileID: 5553881516756804332, guid: d2475bbdf8f0345418ce956bab8526f5, type: 3}
-  - {fileID: 8368529940742716558, guid: d97fcf47c4f92a048b581214bdd105c4, type: 3}
+  - {fileID: 8368529940742716558, guid: 5d703c85aa871c748bba3450b5e885ec, type: 3}
+  - {fileID: 8368529940742716558, guid: 6f2eec4fb71c849478323d64f112e518, type: 3}
+  - {fileID: 5553881516756804332, guid: fdc57b0b9ab1bec4dab8dd1db5acb8bb, type: 3}
+  - {fileID: 8368529940742716558, guid: 6995676c759c9bc4d8fe50095a5dea42, type: 3}
   ghostBuildingList:
-  - {fileID: 8368529940742716558, guid: 3e5b27459d4e55f4d8bfb278a6709de5, type: 3}
-  - {fileID: 8368529940742716558, guid: 83f297dfbee3fe04594968e136dfea6c, type: 3}
-  - {fileID: 5553881516756804332, guid: 02be1937e59f2034fb90cfe2a71cd1b2, type: 3}
-  - {fileID: 8368529940742716558, guid: f366bc5eb06011149956ebf3c34b73e3, type: 3}
+  - {fileID: 8368529940742716558, guid: 0fc3bd24c415e6b40b4eb5c74b29e0ff, type: 3}
+  - {fileID: 8368529940742716558, guid: 87ec916f31a4a9f49af962ccf7573f2c, type: 3}
+  - {fileID: 5553881516756804332, guid: 6e264a24ca83e394b99d4afc498e5479, type: 3}
+  - {fileID: 8368529940742716558, guid: f39635a4f2fed1f4480a1bde4351d1dd, type: 3}
   newBuilding: {fileID: 0}
   ghostBuilding: {fileID: 0}
   inProgressBuilding: {fileID: 0}
@@ -6078,7 +6078,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ce19f20337e1d6545bddd9bc3ba7de65, type: 2}
+  - {fileID: 2100000, guid: f81a978cf85038f41a62cf0aad8c2981, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
