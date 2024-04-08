@@ -131,7 +131,7 @@ MonoBehaviour:
   unitTimer: 0
   curUnitProgress: 0
   curUnitWaitTime: 0
-  isFunctional: 1
+  isFunctional: 0
   isHQ: 0
   isHousing: 1
   isBarrack: 0
@@ -155,8 +155,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 14.1, y: 13.96, z: 15.64}
-  m_Center: {x: 0.3, y: 8, z: 9.3}
+  m_Size: {x: 15, y: 15, z: 16}
+  m_Center: {x: 0.33012438, y: 8.802428, z: 8.24}
 --- !u!208 &4917673033254644317
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -167,11 +167,11 @@ NavMeshObstacle:
   m_Enabled: 1
   serializedVersion: 3
   m_Shape: 1
-  m_Extents: {x: 5.465, y: 6.755, z: 6.05}
+  m_Extents: {x: 4.905, y: 5.7, z: 4.25}
   m_MoveThreshold: 0.1
   m_Carve: 1
   m_CarveOnlyStationary: 1
-  m_Center: {x: 0.38, y: 7.76, z: 9.48}
+  m_Center: {x: 0.4, y: 7.76, z: 8.35}
   m_TimeToStationary: 0.5
 --- !u!54 &113080647215472009
 Rigidbody:

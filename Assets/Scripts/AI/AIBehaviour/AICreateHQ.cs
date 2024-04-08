@@ -51,7 +51,7 @@ public class AICreateHQ : AIBehaviour
         }
 
         //Hide Ghost Building's 3D Model
-        ShowHide3DModel(buildingObjGhost, false);
+        ShowHide3DModel(buildingObjGhost, true);
 
         //if there is a ghost building that has been instantiated from the last frame
         if (buildingObjGhost.GetComponent<FindBuildingSite>().CanBuild == true)
