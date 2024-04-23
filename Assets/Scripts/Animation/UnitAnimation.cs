@@ -49,6 +49,12 @@ public class UnitAnimation : MonoBehaviour
             case UnitState.Die:
                 anim.SetBool("isDie",true);
                 break;
+            case UnitState.DeliverToHQ:
+                anim.SetBool("isMove",true);
+                break;
+            case UnitState.MoveToResource:
+                anim.SetBool("isMove",true);
+                break;
         }
     }
 }
